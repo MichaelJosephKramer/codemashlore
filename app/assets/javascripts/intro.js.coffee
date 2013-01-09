@@ -18,16 +18,16 @@ class Intro.calcModel extends Backbone.Model
     operand2: 0
 
   add: ->
-    @attributes.operand1 + @attributes.operand2
+    @.get("operand1") + @.get("operand2")
 
   subtract: ->
-    @attributes.operand1 - @attributes.operand2
+    @.get("operand1") - @.get("operand2")
 
   multiply: ->
-    @attributes.operand1 * @attributes.operand2
+    @.get("operand1") * @.get("operand2")
 
   divide: ->
-    @attributes.operand1 / @attributes.operand2
+    @.get("operand1") / @.get("operand2")
 
 class Intro.calcView extends Backbone.View
   initialize: ->
